@@ -42,16 +42,7 @@ function DistribuirCartas(){
     for (s=imagens.length; s>cartasDistribuidas/2; s--){
     imagens.pop();
     }
-    // a) primeiro loop do primeiro for: 0 é menor que 2? TRUE
-    // e) segundo loop do primeiro for: 1 é menor que 2? TRUE
-    // i) terceiro loop do primeiro for: 2 é menor que 2? FALSE (**loop encerrado!**)
     for (j=0; j < 2; j++){
-    // b) primeiro loop do segundo for: 0 é menor que 2? TRUE. 
-    // C) segundo loop do segundo for: 1 é menor que 2? TRUE.
-    // d) terceiro loop do segundo for: 2 é menor que 2? FALSE (acaba loop é volta para primeiro for)
-    // f) primeiro loop do segundo for: 0 é menor que 2? TRUE. 
-    // g) segundo loop do segundo for: 1 é menor que 2? TRUE.
-    // h) terceiro loop do segundo for: 2 é menor que 2? FALSE (acaba loop é volta para primeiro for)
     imagens.sort(comparador);
     for (i=0; i < cartasDistribuidas/2; i++){
     let adicionaCarta = `
